@@ -1,0 +1,38 @@
+{
+  "name": "router-hook",
+  "version": "1.0.0",
+  "description": "A router hooks for browser both on hash and history.",
+  "main": "index.js",
+  "module": "dist/router-hook.umd.js",
+  "scripts": {
+    "test": "jest",
+    "start": "webpack-dev-server --config webpack.config.dev.js --mode development --open",
+    "build": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryouaki/router-hook.git"
+  },
+  "keywords": [
+    "router",
+    "hook",
+    "hash",
+    "history"
+  ],
+  "author": "ryouaki (46517115@qq.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryouaki/router-hook/issues"
+  },
+  "homepage": "https://github.com/ryouaki/router-hook#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.13.12",
+    "babel-loader": "^8.2.2",
+    "html-webpack-plugin": "^5.3.2",
+    "jest": "^26.6.3",
+    "webpack": "^5.30.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^4.0.0-beta.3"
+  },
+  "dependencies": {}
+}
