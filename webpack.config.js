@@ -3,7 +3,7 @@ const path = require('path')
 module.exports = (env) => {
   return {
     entry: {
-      RouterHook: './index.js'
+      RouterHook: './lib/index.js'
     },
     mode: 'production',
     output: {

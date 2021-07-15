@@ -2,7 +2,7 @@
   "name": "router-hook",
   "version": "1.0.0",
   "description": "A router hooks for browser both on hash and history.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "module": "dist/router-hook.umd.js",
   "scripts": {
     "test": "jest",
