@@ -21,13 +21,13 @@
   <div id="forward">popStateForward</div>
   <script>
     document.getElementById('replacehash').addEventListener('click', () => {
-      history.replaceState({msg: 'replaceState'}, '', '#hash4')
+      history.replaceState(null, '', '#hash4')
     })
     document.getElementById('hash').addEventListener('click', () => {
       location.hash = 'hash3'
     })
     document.getElementById('pop1').addEventListener('click', () => {
-      history.pushState({msg: 'pushState'}, '', '/pushState' + new Date().getTime())
+      history.pushState(null, '', '/pushState' + new Date().getTime())
     })
     document.getElementById('pop2').addEventListener('click', () => {
       history.replaceState({msg: 'replaceState'}, '', '/replaceState')
