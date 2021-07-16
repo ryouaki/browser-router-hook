@@ -1,9 +1,9 @@
 {
-  "name": "router-hook",
+  "name": "browser-router-hook",
   "version": "1.0.0",
   "description": "A router hooks for browser both on hash and history.",
   "main": "lib/index.js",
-  "module": "dist/router-hook.umd.js",
+  "module": "dist/browser-router-hook.umd.js",
   "scripts": {
     "test": "jest",
     "start": "webpack-dev-server --config webpack.config.dev.js --mode development --open",

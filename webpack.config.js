@@ -3,14 +3,14 @@ const path = require('path')
 module.exports = (env) => {
   return {
     entry: {
-      RouterHook: './lib/index.js'
+      BrowserRouterHook: './lib/index.js'
     },
     mode: 'production',
     output: {
       path: path.join(__dirname, 'dist'),
-      filename: 'router-hook.umd.js',
+      filename: 'browser-router-hook.umd.js',
       libraryTarget: 'umd',
-      library: 'RouterHook'
+      library: 'BrowserRouterHook'
     },
     target: ['web', 'es5'],
     module: {

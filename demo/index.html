@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Router hook</title>
-  <script src="./../dist//router-hook.umd.js"></script>
+  <script src="./../dist/browser-router-hook.umd.js"></script>
 </head>
 <body>
   <div>
@@ -20,7 +20,7 @@
   <div id="back">popStateBack</div>
   <div id="forward">popStateForward</div>
   <script>
-    window.RouterHook(function () {
+    window.BrowserRouterHook(function () {
       console.log(arguments)
     })
     document.getElementById('replacehash').addEventListener('click', () => {
