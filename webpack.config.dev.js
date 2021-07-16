@@ -8,6 +8,9 @@ module.exports = (env) => {
     output: {
       filename: 'bundle.js',
     },
+    devServer: {
+      historyApiFallback: true,
+    },
     target: ['web', 'es5'],
     module: {
       rules: [
