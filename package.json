@@ -19,6 +19,13 @@
     "hash",
     "history"
   ],
+  "files": [
+    "index.js",
+    "package.json",
+    "LICENSE",
+    "README.md",
+    "dist"
+  ],
   "author": "ryouaki (46517115@qq.com)",
   "license": "ISC",
   "bugs": {
