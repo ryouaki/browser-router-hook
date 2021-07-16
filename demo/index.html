@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Router hook</title>
+  <script src="./../dist//router-hook.umd.js"></script>
+</head>
+<body>
+  <div>
+    <a href="#hash1">hash1</a>
+    <a href="#hash2">hash2</a>
+    <div id="replacehash">replacehash</div>
+  </div>
+  <div id="hash">hashChange</div>
+  <div id="pop1">popStatePush</div>
+  <div id="pop2">popStateReplace</div>
+  <div id="go">popStateGo</div>
+  <div id="back">popStateBack</div>
+  <div id="forward">popStateForward</div>
+  <script>
+    window.RouterHook(function () {
+      console.log(arguments)
+    })
+    document.getElementById('replacehash').addEventListener('click', () => {
+      history.replaceState(null, '', '#hash4')
+    })
+    document.getElementById('hash').addEventListener('click', () => {
+      location.hash = 'hash3'
+    })
+    document.getElementById('pop1').addEventListener('click', () => {
+      history.pushState(null, '', '/pushState' + new Date().getTime())
+    })
+    document.getElementById('pop2').addEventListener('click', () => {
+      history.replaceState({msg: 'replaceState'}, '', '/replaceState')
+    })
+    document.getElementById('go').addEventListener('click', () => {
+      history.go(-1)
+    })
+    document.getElementById('back').addEventListener('click', () => {
+      history.back()
+    })
+    document.getElementById('forward').addEventListener('click', () => {
+      history.forward()
+    })
+  </script>
+</body>
+
+</html>
